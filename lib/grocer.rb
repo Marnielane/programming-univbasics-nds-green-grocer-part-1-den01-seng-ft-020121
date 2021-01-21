@@ -10,11 +10,12 @@ grocery_shelf = [
 def find_item_by_name_in_collection(name, collection)
   # Implement me first!
   index = 0 
-  collection.each { |item| 
-    item[:item] == name 
-    return item 
+  collection.each do |item| 
+     if item[:item] == name 
+     return item 
+     end
     index += 1 
-   }
+  end
   nil
 end
 
