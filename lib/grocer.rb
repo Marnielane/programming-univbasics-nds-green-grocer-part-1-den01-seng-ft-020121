@@ -10,7 +10,7 @@ grocery_shelf = [
 def find_item_by_name_in_collection(name, collection)
   # Implement me first!
   collection.each { |row, value| 
-    collection[row][value] == name
+    collection[row][value].include?(name)
     collection[row]
   }
   # Consult README for inputs and outputs
