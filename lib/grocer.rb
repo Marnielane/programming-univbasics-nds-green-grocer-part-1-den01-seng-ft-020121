@@ -11,7 +11,7 @@ def find_item_by_name_in_collection(name, collection)
   # Implement me first!
   item_hash = {}
   collection.each { |key, value| 
-    value[name] == String
+    key[value] == name
     item_hash.push(key, value)
     
   }
