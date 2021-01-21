@@ -9,13 +9,15 @@ grocery_shelf = [
 
 def find_item_by_name_in_collection(name, collection)
   # Implement me first!
-  collection.each { |(key, value), collection| 
-    collection[key][value].include?(name)
-    return collection[key]
-  }
-  # Consult README for inputs and outputs
-
+  index = 0 
+  collection.each { |item| 
+    item[:item] == name 
+    return item 
+    index += 1 
+   }
+  nil
 end
+
 
 def consolidate_cart(cart)
   # Consult README for inputs and outputs
