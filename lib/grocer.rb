@@ -9,11 +9,9 @@ grocery_shelf = [
 
 def find_item_by_name_in_collection(name, collection)
   # Implement me first!
-  item_hash = {}
-  collection.each { |key, value| 
-    key[value] == name
-    item_hash.push(key, value)
-    
+  collection.each { |row, value| 
+    collection[row][value] == name
+    collection[row]
   }
   # Consult README for inputs and outputs
 
