@@ -9,9 +9,10 @@ grocery_shelf = [
 
 def find_item_by_name_in_collection(name, collection)
   # Implement me first!
-  new hash = {}
-  collection.map { |key, value| 
+  item_hash = {}
+  collection.each { |key, value| 
     value[name] == String
+    item_hash.push(key, value)
     
   }
   # Consult README for inputs and outputs
